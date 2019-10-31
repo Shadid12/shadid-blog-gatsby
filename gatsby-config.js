@@ -6,4 +6,19 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Shadid-Blog`,
+    siteUrl: `https://shadid.site`,
+    description: `Welcome to Shadid's blog`,
+  },
+  plugins: [
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+  ],
 }
