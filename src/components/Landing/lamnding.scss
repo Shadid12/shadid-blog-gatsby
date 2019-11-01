@@ -1,0 +1,73 @@
+.landing {
+    display: grid;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-areas: 
+    "one one two three"
+    "one one two three"
+    "one one four five"
+    "one one four five";
+
+    .one, .two, .three, .four, .five {
+        display: flex;
+        background: none;
+        padding: 20px;
+
+        .child {
+            border-radius: 20px;
+        }
+    }
+ 
+    .two {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .two .child {
+        display: flex;
+        width: 80%;
+        height: 80%;
+        background: coral;
+    }
+
+    .three {
+        justify-content: flex-end;
+        align-items: flex-end;
+        .child {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background: cornflowerblue;
+        }
+    }
+
+    .four {
+        justify-content: flex-end;
+        align-items: flex-start;
+        .child {
+            display: flex;
+            width: 50%;
+            height: 50%;
+            background: cyan;
+        }
+    }
+
+    .five {
+        justify-content: flex-start;
+        align-items: flex-start;
+        .child {
+            display: flex;
+            width: 90%;
+            height: 70%;
+            background: sandybrown;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .landing {
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        grid-template-areas: 
+        "one one one one"
+        "one one one one"
+        "two two three three"
+        "four four five five";
+    }
+}
