@@ -12,6 +12,7 @@ module.exports = {
     description: `Welcome to Shadid's blog`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
