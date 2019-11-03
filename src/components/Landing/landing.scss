@@ -11,27 +11,11 @@
     .one, .two, .three, .four, .five {
         display: flex;
         background: none;
-        padding: 20px;
+        padding: 5px;
     }
 
     .one .title-component {
         margin-top: -100px;
-    }
-
-    .two {
-        background: aqua;
-    }
-
-    .three {
-        background: plum;
-    }
-
-    .four {
-        background: powderblue;
-    }
-
-    .five {
-        background: skyblue;
     }
 }
 @media only screen and (max-width: 900px) {
