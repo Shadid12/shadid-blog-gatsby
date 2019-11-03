@@ -1,24 +1,23 @@
 import React from 'react'
-import './lamnding.scss'
+import './landing.scss'
+
+// components
+import Title from './title';
 
 
 export default ({ children }) => (
   <React.Fragment>
     <div className="landing">
         <div className="one">
-            One
+            <Title main="Shadid Haque"/>
         </div>
         <div className="two">
-            <div className="child"></div>
         </div>
         <div className="three">
-            <div className="child"></div>
         </div>
         <div className="four">
-            <div className="child"></div>
         </div>
         <div className="five">
-            <div className="child"></div>
         </div>
     </div>
     {children}

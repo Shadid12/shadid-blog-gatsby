@@ -1,0 +1,46 @@
+.landing {
+    display: grid;
+    // grid-template-rows: 20vh 20vh 30vh 30vh;
+    grid-template-rows: 22.5vh 22.5vh 22.5vh 22.5vh;
+    grid-template-areas: 
+    "one one two three"
+    "one one two three"
+    "one one four five"
+    "one one four five";
+
+    .one, .two, .three, .four, .five {
+        display: flex;
+        background: none;
+        padding: 20px;
+    }
+
+    .one .title-component {
+        margin-top: -100px;
+    }
+
+    .two {
+        background: aqua;
+    }
+
+    .three {
+        background: plum;
+    }
+
+    .four {
+        background: powderblue;
+    }
+
+    .five {
+        background: skyblue;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .landing {
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+        grid-template-areas: 
+        "one one one one"
+        "one one one one"
+        "two two three three"
+        "four four five five";
+    }
+}
