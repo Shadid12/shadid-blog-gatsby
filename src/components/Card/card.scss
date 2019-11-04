@@ -27,6 +27,12 @@
         width: 70px;
     }
 
+    @media only screen and (max-width: 900px) {
+        img {
+            width: 30px;
+        }
+    }
+
     h3 {
         font-family: Roboto Mono;
         margin-bottom: 5px;
