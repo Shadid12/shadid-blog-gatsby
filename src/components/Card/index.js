@@ -5,10 +5,14 @@ import proptect from './assets/protect.svg'
 import camera from './assets/camera.svg'
 import anon from './assets/anon.svg'
 import tut from './assets/tut.svg'
+import atom from './assets/atom.svg'
 
 export default  (props) => {
     const {title, btnTitle, sub, icon} = props
     let propIcon = null
+    if(icon && icon === 'atom') {
+        propIcon = atom
+    }
     if(icon && icon === 'protect') {
         propIcon = proptect
     } 

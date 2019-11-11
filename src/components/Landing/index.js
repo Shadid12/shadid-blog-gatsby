@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from "gatsby"
 import './landing.scss'
 
 // components
@@ -12,31 +13,37 @@ export default ({ children }) => (
         <div className="one">
             <Title main="Shadid Haque"/>
         </div>
-        <div className="two">
+        <div 
+            className="two" 
+            onClick={() => navigate(
+                '/post')
+            }
+        >
             <Card 
-                title='Title' 
-                sub='some subtitles'
-                icon='protect'
+                title='Advanced React Component Patterns' 
+                sub='Learn about design patterns to write clean scalable code in React'
+                icon='atom'
             />
         </div>
         <div className="three">
             <Card 
-                title='Title 2' 
-                sub='some subtitles' 
+                title='Building an one man Startup in 3 months' 
+                sub='My journey of taking an idea to reality and how I got 
+                        my heart broken on the process'
                 icon='camera'
             />
         </div>
         <div className="four">
             <Card 
-                title='Title 3' 
-                sub='some subtitles' 
+                title='Why every developer should think like entrepeneurs' 
+                sub='A handbook to navigate your way through a software development career like a rock star' 
                 icon='tut'
             />
         </div>
         <div className="five">
             <Card 
-                title='Title 4' 
-                sub='some subtitles' 
+                title='The Blog' 
+                sub='Short form thoughts' 
                 icon='anon'
             />
         </div>
