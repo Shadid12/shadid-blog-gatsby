@@ -1,0 +1,34 @@
+.one, .two, .three, .four, .five, .six, .seven {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    grid-area: one;
+    background-color: ivory;
+}
+.two {
+    grid-area: two;
+    background-color: khaki;
+}
+.three {
+    grid-area: three;
+    background-color: lightcoral;
+}
+.four {
+    grid-area: four;
+    background-color: mediumspringgreen;
+}
+.five {
+    grid-area: five;
+    background-color: lightsalmon;
+}
+.six {
+    grid-area: six;
+    background-color: mistyrose;
+}
+.seven {
+    grid-area: seven;
+    background: moccasin;
+}
