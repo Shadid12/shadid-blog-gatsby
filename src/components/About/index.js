@@ -6,7 +6,7 @@ import '../../styles/about.scss'
 export default ({ children }) => (
   <div className='about-container'>
     <div className="img-container">
-        <img src="https://shadid.site/static/assets/1.jpg" />
+        <img src="https://miro.medium.com/fit/c/256/256/0*Fce-h4hJxly2toCI." />
     </div>
     <div className="txt">
         <p>

@@ -6,15 +6,17 @@ import camera from './assets/camera.svg'
 import anon from './assets/anon.svg'
 import tut from './assets/tut.svg'
 import atom from './assets/atom.svg'
+import dev from './assets/dev.png'
+import soshace from './assets/soshace.png'
 
 export default  (props) => {
     const {title, btnTitle, sub, icon} = props
     let propIcon = null
-    if(icon && icon === 'atom') {
-        propIcon = atom
+    if(icon && icon === 'dev') {
+        propIcon = dev
     }
-    if(icon && icon === 'protect') {
-        propIcon = proptect
+    if(icon && icon === 'soshace') {
+        propIcon = soshace
     } 
     if(icon && icon === 'camera') {
         propIcon = camera
